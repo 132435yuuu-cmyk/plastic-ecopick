@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plastic5 - 5분 안에 플라스틱 솔루션</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Gamja+Flower&display=swap');
+
+    :root{
+      --bg:#f3fffb; --card:#ffffff; --accent:#9ee6cf; --accent2:#c6f4e6; --text:#3b4a42; --shadow:rgba(0,0,0,0.05);
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0; font-family:'Gamja Flower', sans-serif; background:var(--bg);
+      color:var(--text); display:flex; justify-content:center; padding:20px; position:relative; overflow-x:hidden;
+    }
+    .wrap{max-width:880px; width:100%; background:var(--card); border-radius:20px; box-shadow:0 8px 16px var(--shadow); padding:20px;}
+
+    header{text-align:center; margin-bottom:20px; position:relative;}
+    .logo{
+      display:inline-block; background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff; font-family:'Jua'; font-size:32px; padding:16px 28px; border-radius:50px; box-shadow:0 4px 12px var(--shadow);
+    }
+    h1{margin:10px 0 0;font-family:'Jua';font-size:28px;}
+    p.lead{margin:4px 0 0;color:#60796f;font-size:18px;}
+
+    main{display:flex;flex-direction:column;gap:20px;}
+
+    section{
+      background:#e9fff8; border-radius:20px; padding:18px 20px; box-shadow:0 4px 12px var(--shadow);
+    }
+    section h2{font-family:'Jua';font-size:22px;margin-top:0;color:#6cd1b6;}
+    section p{font-size:18px;line-height:1.6;margin:10px 0;}
+    ul{padding-left:20px;}
+    li{margin-bottom:6px;}
+
+    table{width:100%;border-collapse:collapse;margin-top:10px;font-size:17px;}
+    th,td{padding:8px;border-bottom:1px dashed #bff2e0;}
+    th{background:#d6fff2;}
+
+    footer{text-align:center;color:#789c8f;font-size:16px;margin-top:20px;}
+
+    .btns{text-align:center;margin-top:20px;}
+    button{
+      background:var(--accent);border:none;color:#fff;padding:10px 18px;border-radius:25px;
+      font-family:'Jua';font-size:16px;cursor:pointer;transition:all .2s;
+    }
+    button:hover{background:#7fdac1;}
+
+    .cloud{
+      position:fixed;top:-40px;left:20%;width:200px;height:100px;background:#fff;border-radius:50%;
+      box-shadow:60px 20px 0 0 #fff,120px 30px 0 0 #fff,180px 10px 0 0 #fff;
+      opacity:.5;animation:float 10s ease-in-out infinite;
+    }
+    .cloud2{top:100px;left:60%;width:180px;animation-delay:5s;}
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(20px);}}
+
+    .cat{
+      position:absolute; bottom:10px; right:20px; width:100px; height:100px;
+      background:url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center/contain;
+      animation:wave 3s ease-in-out infinite;
+    }
+    @keyframes wave {0%,100%{transform:rotate(0deg);}50%{transform:rotate(5deg);} }
+  </style>
+</head>
+<body>
+  <div class="cloud"></div>
+  <div class="cloud cloud2"></div>
+  <div class="wrap">
+    <header>
+      <div class="logo">🐾 Plastic5 🐾</div>
+      <h1>5분 안에 플라스틱 솔루션</h1>
+      <p class="lead">미세플라스틱 저감을 위한 포근한 민트빛 정보 큐레이션 서비스 🌿</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. 기획 배경</h2>
+        <p>🌍 미세플라스틱이 생태계와 인간 건강에 미치는 영향은 점점 커지고 있어요.<br>Plastic5는 부드럽고 귀여운 감성으로 환경 보호를 쉽고 따뜻하게 전달해요. 🐱💚</p>
+      </section>
+
+      <section>
+        <h2>2. 프로젝트 목표</h2>
+        <ul>
+          <li>신뢰성 있는 자료를 기반으로 5분 안에 읽을 수 있는 요약 정보 제공</li>
+          <li>SNS 카드뉴스로 재미있게 전달</li>
+          <li>환경 실천 참여율 향상</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. 주요 내용</h2>
+        <p>🌱 <b>형태:</b> 인스타그램 카드뉴스, 웹사이트 리포트, ‘오늘의 한 줄 팁’ 등</p>
+        <p>🌱 <b>주요 주제:</b></p>
+        <table>
+          <tr><th>주제</th><th>5분 요약</th></tr>
+          <tr><td>세탁 시 미세섬유 줄이기</td><td>세탁망 사용, 저온세탁, 천연섬유 착용 🌿</td></tr>
+          <tr><td>대체소재 연구</td><td>PLA, PHA 등 생분해성 소재 소개 🌱</td></tr>
+          <tr><td>국가별 정책</td><td>EU·한국의 미세플라스틱 규제 비교 🌎</td></tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>4. 운영 계획</h2>
+        <ul>
+          <li>🌼 1단계: 자료 조사 & 출처 확보</li>
+          <li>🌼 2단계: 카드뉴스 10편 제작</li>
+          <li>🌼 3단계: 학교 홍보 & 피드백 수집</li>
+          <li>🌼 4단계: 웹사이트 구축 및 확장</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. 기대 효과</h2>
+        <ul>
+          <li>🍀 환경 인식이 따뜻하게 확산</li>
+          <li>🍀 청소년이 주도하는 실천형 프로젝트</li>
+          <li>🍀 학교와 지역사회를 잇는 환경 커뮤니티 형성</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. 향후 발전 방향</h2>
+        <p>🌷 AI 요약 기능 도입, 모바일 앱 확장, 환경단체와의 협업으로 더 넓은 영향력을 만들어갈 예정이에요! 😺</p>
+      </section>
+
+      <footer>
+        🌿 <b>Plastic5</b>는 모두가 함께 환경을 지키는 포근한 움직임이에요 🌿<br>
+        © 2025 Plastic5 Team. All rights reserved.
+      </footer>
+
+      <div class="btns">
+        <button id="copyBtn">요약 복사 💚</button>
+        <button id="printBtn">인쇄하기 🖨️</button>
+      </div>
+    </main>
+    <div class="cat" title="귀여운 고양이"></div>
+  </div>
+
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', async()=>{
+      const text = `Plastic5 요약:\n\n민트빛 감성으로 미세플라스틱 해결법을 알려주는 따뜻한 정보 큐레이션 서비스.\n환경 자료를 쉽게 이해하고 실천으로 연결하는 청소년 프로젝트!`;
+      await navigator.clipboard.writeText(text);
+      alert('요약이 복사되었어요 💚');
+    });
+
+    document.getElementById('printBtn').addEventListener('click',()=>window.print());
+  </script>
+</body>
+</html>
+
+
+{"updates":[{"pattern":".*","multiple":false,"replacement":"<!doctype html>\n<html lang="ko">\n<head>\n  <meta charset="utf-8" />\n  <meta name="viewport" content="width=device-width,initial-scale=1" />\n  <title>Plastic5 - 실험실 (미세플라스틱 실험 시뮬레이터)</title>\n  <style>\n    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Gamja+Flower&display=swap');\n    :root{--bg:#f3fffb;--card:#ffffff;--accent:#9ee6cf;--accent2:#c6f4e6;--text:#2f4a3f;--muted:#6b8b7a;--shadow:rgba(0,0,0,0.06)}\n    *{box-sizing:border-box}\n    body{margin:0;font-family:'Gamja Flower',sans-serif;background:var(--bg);color:var(--text);display:flex;justify-content:center;padding:24px}\n    .wrap{width:100%;max-width:1100px;background:var(--card);border-radius:18px;padding:20px;box-shadow:0 10px 30px var(--shadow);position:relative}\n    header{display:flex;align-items:center;gap:16px}\n    .logo{background:linear-gradient(135deg,var(--accent),var(--accent2));padding:14px 20px;border-radius:40px;color:#fff;font-family:'Jua';font-size:22px}\n    h1{margin:0;font-family:'Jua';font-size:20px}\n    p.lead{margin:4px 0 0;color:var(--muted)}\n\n    main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}\n    .card{background:#e9fff8;padding:16px;border-radius:14px}\n    .panel{background:#fff;padding:14px;border-radius:12px;box-shadow:0 6px 14px var(--shadow)}\n\n    label{display:block;margin-top:8px;font-weight:700;color:#2b4a3f}\n    input[type=range]{width:100%}\n    input[type=number], select, input[type=text]{width:100%;padding:8px;border-radius:8px;border:1px solid #d6efe6;margin-top:6px}\n    .small{font-size:13px;color:var(--muted)}\n\n    .controls{display:flex;gap:8px;margin-top:10px}\n    button{background:var(--accent);border:0;padding:8px 12px;border-radius:10px;color:#fff;cursor:pointer;font-weight:700}\n    button.ghost{background:transparent;border:1px solid #cbeee0;color:var(--text)}\n\n    .result-box{background:linear-gradient(180deg,#ffffff,#f8fffb);padding:12px;border-radius:10px;margin-top:12px}\n    .big{font-size:20px;font-weight:800;color:#1f6b56}\n\n    canvas{width:100%;height:220px;background:transparent}\n\n    .cat{position:absolute;right:18px;bottom:18px;width:110px;height:110px;background:url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center/contain;opacity:0.95}\n\n    footer{grid-column:1/-1;margin-top:12px;text-align:center;color:var(--muted)}\n\n    @media(max-width:980px){main{grid-template-columns:1fr} .cat{display:none}}\n  </style>\n</head>\n<body>\n  <div class="wrap">\n    <header>\n      <div class="logo">🐾 Plastic5 Lab</div>\n      <div>\n        <h1>미세플라스틱 실험 시뮬레이터</h1>\n        <p class="lead">기획보고서(Plastic5)의 실천 항목을 직접 실험하고 가상의 임팩트를 계산해보세요. (모든 수치는 문헌 기반 추정치이며, 실제값은 환경·조건에 따라 다를 수 있습니다.)</p>\n      </div>\n    </header>\n\n    <main>\n      <section class="card">\n        <h3 style="margin:0">실험 시나리오 설정</h3>\n        <p class="small">가상의 가구(또는 학교) 단위로 실험을 실행합니다. 기본값은 '가구 1'이 주당 세탁 5회, 일회용품 사용 14회 등으로 설정되어 있습니다.</p>\n\n        <div class="panel" style="margin-top:12px">\n          <label>시나리오 이름</label>\n          <input id="scenarioName" type="text" value="우리집 친환경 챌린지">\n\n          <label>대상 (인원수)</label>\n          <input id="people" type="number" min="1" value="3">\n\n          <label>주당 세탁 횟수 (한 가구 기준)</label>\n          <input id="washCount" type="number" min="0" value="5">\n\n          <label>세탁 시 사용 (옵션)</label>\n          <div style="display:flex;gap:8px;margin-top:8px">\n            <label><input id="useBag" type="checkbox" checked> 세탁망 사용</label>\n            <label><input id="lowTemp" type="checkbox" checked> 저온(30°C 이하) 세탁</label>\n            <label><input id="naturalFiber" type="checkbox"> 천연섬유 비율 높임</label>\n          </div>\n\n          <label style="margin-top:10px">주당 일회용품 사용 횟수 (1인 기준)</label>\n          <input id="singleUse" type="number" min="0" value="14">\n\n          <label>일회용품 대체 (옵션)</label>\n          <div style="display:flex;gap:8px;margin-top:8px">\n            <label><input id="useReusable" type="checkbox"> 개인 텀블러/식기 사용</label>\n            <label><input id="reducePackaging" type="checkbox" checked> 포장재 줄이기</label>\n          </div>\n\n          <div class="controls">\n            <button id="run">시뮬레이션 실행</button>\n            <button class="ghost" id="reset">초기화</button>\n            <button class="ghost" id="export">CSV 내보내기</button>\n          </div>\n\n          <div class="result-box" id="results">\n            <div>예상 주간 미세섬유 방출량: <span class="big" id="microfibers">-</span> (단위: 추정 '상대 지수')</div>\n            <div style="margin-top:8px;color:var(--muted)" id="explain">--</div>\n          </div>\n        </div>\n\n        <div style="margin-top:12px" class="panel">\n          <h4 style="margin:0">5분 요약 카드 (보고서 기반 추천)</h4>\n          <ul style="margin-top:8px;color:#2b4a3f">\n            <li>세탁 시 세탁망 사용: 섬유 유출을 줄일 수 있음.</li>\n            <li>저온 세탁 & 세탁 횟수 감소: 마찰 감소로 미세섬유 발생 감소.</li>\n            <li>합성섬유 사용 줄이기: 천연섬유 비율을 늘리면 전체 방출량 감소.</li>\n            <li>일회용품·포장재 줄이기: 소비자 행동이 쓰레기 발생과 미세플라스틱 노출을 줄임.</li>\n          </ul>\n        </div>\n      </section>\n\n      <aside>\n        <div class="panel">\n          <h3 style="margin:0">실험 히스토리</h3>\n          <div id="history" style="margin-top:8px;color:var(--muted);font-size:14px">아직 실행된 실험이 없습니다.</div>\n        </div>\n\n        <div class="panel" style="margin-top:12px">\n          <h3 style="margin:0">시뮬레이션 그래프</h3>\n          <canvas id="chart" width="320" height="220"></canvas>\n          <div style="font-size:13px;color:var(--muted);margin-top:8px">그래프는 상대 지수를 사용한 가시화입니다.</div>\n        </div>\n\n        <div class="panel" style="margin-top:12px">\n          <h4 style="margin:0">메모</h4>\n          <p class="small" style="margin-top:8px">이 시뮬레이터는 보고서의 실천 항목을 바탕으로 학생들이 직접 실험해볼 수 있도록 제작된 교육용 도구입니다. 모든 수치는 간이 추정치이며, 실제 측정값을 대체하지 않습니다.</p>\n        </div>\n      </aside>\n\n      <div class="cat" title="귀여운 고양이"></div>\n    </main>\n\n    <footer>참고: 수치 설명 — 세탁망 사용: 30% 감소, 저온세탁: 15% 감소, 천연섬유 전환: 최대 50% 감소(비율 반영), 텀블러 사용: 일회용품 사용 70% 감소, 포장재 줄이기: 30% 감소. (문헌 기반 추정값 활용)</footer>\n  </div>\n\n  <script>\n    // 간단한 시뮬레이션 모델 (교육용 추정치)\n    function estimateWeeklyMicrofibers({people,washCount,useBag,lowTemp,naturalFiberPercent,singleUse,useReusable,reducePackaging}){\n      // 기본 베이스: 한 사람당 한 주에 발생하는 상대 지수\n      // 값은 임의 단위의 '상대 지수'로 결과는 절대량이 아님\n      let basePerWash = 1.0; // 세탁 1회당 상대 지수\n      let baseSyntheticWear = basePerWash * washCount; // per person\n\n      // 천연섬유 비율 반영: 더 높은 천연섬유 비율 -> 합성섬유 착용 감소\n      // naturalFiberPercent: 0~100\n      const syntheticFactor = 1 - (naturalFiberPercent/100) * 0.8; // 천연섬유가 많을수록 합성섬유 비중 감소\n      let perPersonFibers = baseSyntheticWear * syntheticFactor;\n\n      // 세탁망, 저온 영향\n      if(useBag) perPersonFibers *= 0.7; // -30%\n      if(lowTemp) perPersonFibers *= 0.85; // -15%\n\n      // 일회용품에서 유발되는 플라스틱 노출(단순 모델)\n      let singleUseImpact = singleUse * 0.2; // 한 번의 일회용 사용이 주는 상대지수\n      if(useReusable) singleUseImpact *= 0.3; // 70% 감소\n      if(reducePackaging) singleUseImpact *= 0.
